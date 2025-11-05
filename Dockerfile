@@ -1,6 +1,6 @@
 FROM bellsoft/liberica-openjre-debian:21-cds AS builder
 WORKDIR /builder
-ARG JAR_FILE=hwa/target/*.jar
+ARG JAR_FILE=api/target/*.jar
 COPY ${JAR_FILE} app.jar
 RUN java -Djarmode=tools -jar app.jar extract --layers --destination extracted
 
