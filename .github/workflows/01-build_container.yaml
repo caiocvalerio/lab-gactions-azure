@@ -31,10 +31,14 @@ jobs:
                   java-version: "21"
 
             - name: Build with Maven
-              run: mvn -U clean package -DskipTests
+              run: |
+                cd api
+                mvn -U clean package -DskipTests
 
             - name: Run Tests
-              run: mvn test
+              run: |
+                cd api
+                mvn test
 
             - name: Build docker image
               run: docker build -t ${{env.IMAGE_NAME}}
