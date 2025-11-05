@@ -13,7 +13,7 @@ permissions:
 
 env:
     ARTIFACT_NAME: "api-${{github.sha}}.jar"
-    IMAGE_NAME: "JAVA-API:${{github.sha}}"
+    IMAGE_NAME: "java-api:${{github.sha}}"
     REGISTRY_NAME: ${{secrets.AZURE_REGISTRY_NAME}}
     REGISTRY_IMAGE: "${{secrets.AZURE_REGISTRY_NAME}}/java-api:${{ github.sha }}"
 
