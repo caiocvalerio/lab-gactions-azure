@@ -1,5 +1,6 @@
 FROM bellsoft/liberica-openjre-debian:21-cds AS builder
 WORKDIR /builder
+RUN apt-get update && apt-get upgrade -y
 ARG JAR_FILE=api/target/hwa-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 RUN java -Djarmode=tools -jar app.jar extract --layers --destination extracted
