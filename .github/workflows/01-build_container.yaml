@@ -41,7 +41,7 @@ jobs:
                 mvn test
 
             - name: Build docker image
-              run: docker build -t ${{env.IMAGE_NAME}}
+              run: docker build -t ${{env.IMAGE_NAME}} .
 
             - name: Trivy Scan
               uses: aquasecurity/trivy-action@master
