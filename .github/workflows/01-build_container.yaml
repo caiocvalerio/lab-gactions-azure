@@ -49,7 +49,7 @@ jobs:
                 image-ref: ${{env.IMAGE_NAME}}
                 format: table
                 exit-code: 1
-                severity: HIGH, CRITICAL
+                severity: HIGH,CRITICAL
             
             - name: Azure Login
               uses: azure/login@v2
