@@ -57,7 +57,7 @@ Este *job* (que depende do sucesso do `build-and-test`) simula um *deploy* num a
 
 ---
 
-## 🔧 Configuração e Setup
+## Configuração e Setup
 
 Para replicar este projeto, é necessário configurar os seguintes **GitHub Repository Secrets**:
 
