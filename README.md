@@ -6,7 +6,7 @@ O objetivo é automatizar o processo desde o *push* do código no GitHub até te
 
 ---
 
-## 🌩️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Java 21:** Linguagem de programação da API.
 * **Spring Boot:** Framework para criação da API REST.
@@ -18,7 +18,7 @@ O objetivo é automatizar o processo desde o *push* do código no GitHub até te
 
 ---
 
-## 🎯 Funcionalidades do Projeto
+## Funcionalidades do Projeto
 
 Este laboratório inclui:
 
@@ -28,7 +28,7 @@ Este laboratório inclui:
 
 ---
 
-## 🔄 O Pipeline de CI/CD
+## O Pipeline de CI/CD
 
 O ficheiro `.github/workflows/main.yml` define a automação deste projeto, que é dividida em dois *jobs* principais:
 
