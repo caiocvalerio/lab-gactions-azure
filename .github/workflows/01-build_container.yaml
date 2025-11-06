@@ -12,7 +12,7 @@ permissions:
     contents: read
 
 env:
-    ARTIFACT_NAME: "api-${{github.sha}}.jar"
+    ARTIFACT_NAME: "app-${{github.sha}}.jar"
     IMAGE_NAME: "java-api:${{github.sha}}"
     REGISTRY_NAME: ${{secrets.AZURE_REGISTRY_NAME}}
     REGISTRY_IMAGE: "${{secrets.AZURE_REGISTRY_NAME}}/java-api:${{ github.sha }}"
@@ -84,5 +84,3 @@ jobs:
               run: |
                 echo "Build: ${{env.ARTIFACT_NAME}}"
                 echo "Fake deploy to: https://staging.example.com"
-            
-            
